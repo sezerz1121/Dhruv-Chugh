@@ -36,12 +36,12 @@ const projects = [
 ]
 
 const capabilities = [
-  ['✦', 'Illustration', 'Hand-drawn artwork with an energetic, ownable point of view.'],
-  ['Aa', 'Brand identity', 'Visual systems, logos, colour and type that feel unmistakably yours.'],
-  ['◌', 'Social creative', 'Scroll-stopping posts, stories, covers and campaign worlds.'],
-  ['▣', 'Campaign & ads', 'Concept-led creative built for launches, audiences and attention.'],
-  ['⌁', 'E-commerce design', 'Product listings, hero banners and visual merchandising that sells.'],
-  ['▤', 'Print & packaging', 'Tactile, considered assets made to stand out off-screen.'],
+  ['✦', 'Illustration', 'Hand-drawn Procreate artwork for apparel, products, and campaign visuals.'],
+  ['Aa', 'Brand identity', 'Logos, colour, and type systems built to give brands a distinct visual identity.'],
+  ['◌', 'Social creative', 'Instagram grid posts, Reels covers, and Story graphics made for social-first brands.'],
+  ['▣', 'Campaign & ads', 'Campaign concepts, poster art, and short-film treatments shaped for distinct audiences.'],
+  ['⌁', 'E-commerce design', 'Marketplace listings, hero banners, lifestyle images, and ads for Amazon, Meesho, and Myntra.'],
+  ['▤', 'Print & packaging', 'Print and packaging layouts, including apparel size charts calibrated to Indian sizing.'],
 ]
 
 function App() {
@@ -110,7 +110,7 @@ function App() {
         <a className="wordmark" href="#top" onClick={closeMenu}>Dhruv<span> Chugh</span></a>
         <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen}>Menu <b>{menuOpen ? '×' : '+'}</b></button>
         <div className={'navlinks ' + (menuOpen ? 'open' : '')}>
-          <a href="#work" onClick={closeMenu}>Work</a><a href="#about" onClick={closeMenu}>About</a>
+          <a href="#work" onClick={closeMenu}>Work</a><a href="#experience" onClick={closeMenu}>Experience</a><a href="#about" onClick={closeMenu}>About</a>
         </div>
         <a className="pill" href="mailto:dhruvchugh2801@gmail.com">Let's talk <Arrow /></a>
       </nav>
@@ -136,7 +136,7 @@ function App() {
 
     <section className="impact"><div className="wrap metrics reveal"><div><strong>299K</strong><span>Accounts reached</span></div><div><strong>91K</strong><span>Views in one month</span></div><div><strong>10K+</strong><span>Units sold</span></div><div><strong>3</strong><span>Creative teams</span></div></div></section>
 
-    <section className="contact"><div className="contact-orb" /><div className="wrap contact-content reveal"><p className="eyebrow"><span /> Have a good idea?</p><h2>Let’s make<br/>something <em>loud.</em></h2><p>Available for creative collaborations, design roles, and projects with a point of view.</p><a className="button dark" href="mailto:dhruvchugh2801@gmail.com">dhruvchugh2801@gmail.com <Arrow /></a><div className="contact-meta"><span>Delhi, India</span><a href="tel:+919999242368">+91 99992 42368</a></div></div></section>
+    <section className="experience wrap" id="experience"><div className="section-title reveal"><div><p className="eyebrow"><span /> Experience & education</p><h2>Made across <em>different worlds.</em></h2></div><p>Creative direction, marketplace design, and client work across streetwear, D2C, and agency projects.</p></div><div className="timeline"><article className="job reveal"><span className="date">2024 - Present</span><div><h3>HCwrld</h3><p className="role">Founder & Creative Director | Delhi / Noida</p></div><p>Build the streetwear label's visual identity through hand-drawn Procreate artwork, apparel graphics, social content, creator outreach, and campaign concepts. Instagram content reached 299K accounts and 91K views in one month.</p></article><article className="job reveal"><span className="date">2023 - 2024</span><div><h3>Punora</h3><p className="role">Graphic Designer | Noida</p></div><p>Designed product listings, hero banners, packaging, and paid social creative for a D2C electronics catalogue across Amazon, Meesho, and Myntra. The catalogue crossed 10,000 units sold.</p></article><article className="job reveal"><span className="date">2025 - Present</span><div><h3>Friends Clearing Agency</h3><p className="role">Graphic Designer</p></div><p>Create social graphics, identity assets, and print and packaging layouts for agency clients, taking briefs through to finished design files independently.</p></article></div><div className="education-block reveal"><p className="eyebrow"><span /> Education</p><div className="education-grid"><div><h3>BBA LL.B. (H)</h3><p>In progress | Maharaja Agrasen Institute of Management Studies, Delhi</p></div><div><h3>Schooling</h3><p>Delhi Public School, Vasant Kunj</p></div></div></div></section><section className="contact"><div className="contact-orb" /><div className="wrap contact-content reveal"><p className="eyebrow"><span /> Have a good idea?</p><h2>Let’s make<br/>something <em>loud.</em></h2><p>Available for creative collaborations, design roles, and projects with a point of view.</p><a className="button dark" href="mailto:dhruvchugh2801@gmail.com">dhruvchugh2801@gmail.com <Arrow /></a><div className="contact-meta"><span>Delhi, India</span><a href="tel:+919999242368">+91 99992 42368</a></div></div></section>
     <footer className="wrap"><a className="wordmark" href="#top">Dhruv<span> Chugh</span></a><p>© 2026 Dhruv Chugh</p><a href="mailto:dhruvchugh2801@gmail.com">Say hello ↗</a></footer>
   </main>
 }
