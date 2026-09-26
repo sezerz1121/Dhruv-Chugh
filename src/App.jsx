@@ -36,12 +36,12 @@ const projects = [
 ]
 
 const capabilities = [
-  ['âœ¦', 'Illustration', 'Hand-drawn artwork with an energetic, ownable point of view.'],
+  ['✦', 'Illustration', 'Hand-drawn artwork with an energetic, ownable point of view.'],
   ['Aa', 'Brand identity', 'Visual systems, logos, colour and type that feel unmistakably yours.'],
-  ['â—Œ', 'Social creative', 'Scroll-stopping posts, stories, covers and campaign worlds.'],
-  ['â–£', 'Campaign & ads', 'Concept-led creative built for launches, audiences and attention.'],
-  ['âŒ', 'E-commerce design', 'Product listings, hero banners and visual merchandising that sells.'],
-  ['â–¤', 'Print & packaging', 'Tactile, considered assets made to stand out off-screen.'],
+  ['◌', 'Social creative', 'Scroll-stopping posts, stories, covers and campaign worlds.'],
+  ['▣', 'Campaign & ads', 'Concept-led creative built for launches, audiences and attention.'],
+  ['⌁', 'E-commerce design', 'Product listings, hero banners and visual merchandising that sells.'],
+  ['▤', 'Print & packaging', 'Tactile, considered assets made to stand out off-screen.'],
 ]
 
 function App() {
@@ -108,7 +108,7 @@ function App() {
     <header className="wrap hero" id="top">
       <nav className="nav">
         <a className="wordmark" href="#top" onClick={closeMenu}>Dhruv<span> Chugh</span></a>
-        <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen}>Menu <b>{menuOpen ? 'Ã—' : '+'}</b></button>
+        <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen}>Menu <b>{menuOpen ? '×' : '+'}</b></button>
         <div className={'navlinks ' + (menuOpen ? 'open' : '')}>
           <a href="#work" onClick={closeMenu}>Work</a><a href="#about" onClick={closeMenu}>About</a>
         </div>
@@ -119,10 +119,10 @@ function App() {
           <p className="eyebrow"><span /> Graphic designer · Delhi, India</p>
           <h1>Art that gives<br/>brands a <em>pulse.</em></h1>
           <p className="intro-copy">I’m Dhruv — a graphic designer and illustrator creating expressive identities, hand-drawn worlds, and social-first work that gets people looking twice.</p>
-          <div className="hero-actions"><a className="button" href="#work">See selected work <Arrow /></a><a className="underlink" href="#about">A little about me â†“</a></div>
+          <div className="hero-actions"><a className="button" href="#work">See selected work <Arrow /></a><a className="underlink" href="#about">A little about me ↓</a></div>
         </section>
         <div className="hero-art" aria-label="Abstract hand-drawn illustration">
-          <div className="sun">âœ³</div><div className="scribble">â˜…</div><div className="paper-card"><small>DESIGNED<br/>BY DHRUV</small><b>MAKE<br/><i>NOISE.</i></b><span>âœ¦</span></div><div className="sticker">ALL<br/>HEART</div><svg viewBox="0 0 500 450" className="doodle" aria-hidden="true"><path d="M47 338C101 190 162 406 244 274c77-124 119 47 217-178"/><path d="M73 106c54-68 89 27 134-22 47-51 77 24 128-44"/><circle cx="90" cy="345" r="24"/></svg>
+          <div className="sun">✳</div><div className="scribble">★</div><div className="paper-card"><small>DESIGNED<br/>BY DHRUV</small><b>MAKE<br/><i>NOISE.</i></b><span>✦</span></div><div className="sticker">ALL<br/>HEART</div><svg viewBox="0 0 500 450" className="doodle" aria-hidden="true"><path d="M47 338C101 190 162 406 244 274c77-124 119 47 217-178"/><path d="M73 106c54-68 89 27 134-22 47-51 77 24 128-44"/><circle cx="90" cy="345" r="24"/></svg>
         </div>
       </div>
       <div className="hero-footer"><span>Hand-drawn visual design & creative direction</span><div><b>ILLUSTRATION</b><b>IDENTITY</b><b>CAMPAIGNS</b></div></div>
