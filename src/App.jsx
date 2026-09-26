@@ -24,7 +24,7 @@ const projects = [
   { number: '12', name: 'October Pants', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-pants.jpeg', document: '/projects/project-12.pdf', focus: 'center' },
   { name: 'Rugged Graphic Tee', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-rugged-blue-tee.jpeg', focus: 'center' },
   { name: 'Cartoon Graphic Tee', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-cartoon-tee.jpeg', focus: 'center' },
-  { number: '18', name: 'Baddie Croptop + Product Mockup', type: 'HCwrld · Apparel & product mockup', image: '/projects/hc-forest-campaign.jpeg', focus: 'center' },
+  { number: '18', name: 'Baddie Croptop', type: 'HCwrld · Apparel & product mockup', image: '/projects/hc-forest-campaign.jpeg', focus: 'center' },
   { number: '21', name: 'Bandage Heart Emblem', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-bandage-emblem.jpeg', focus: 'center' },
   { number: '22', name: 'Protect Peace Tee', type: 'HCwrld · Apparel graphic design', images: ['/projects/peace-tee-front.jpeg', '/projects/peace-tee-back.jpeg'], focus: 'center' },
   { number: '23', name: 'Paisley Flame Tee — Front & Back', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-paisley-front-back.jpeg', focus: 'center' },
