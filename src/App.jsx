@@ -14,6 +14,11 @@ const projects = [
   { number: '05', name: 'Space Airways — Travel Website', type: 'Travel booking · Website UI/UX', image: '/projects/space-airways.jpeg', focus: 'top' },
   { number: '06', name: 'Jante Mereko Ko', type: 'Bhukkad Editor · Album cover artwork', image: '/projects/bhukkad-editor.jpeg', focus: 'center' },
   { number: '07', name: 'Dexter — Shopping App', type: 'E-commerce · Mobile app UI', image: '/projects/dexter-app.jpeg', focus: 'center' },
+  { number: '08', name: 'When Back-Row Designs Front-Row', type: 'HCwrld · Editorial campaign artwork', image: '/projects/hc-back-row.jpeg', focus: 'center' },
+  { number: '09', name: 'All About HC', type: 'HCwrld · Streetwear campaign artwork', image: '/projects/hc-all-about.jpeg', focus: 'center' },
+  { number: '10', name: 'We Are Back', type: 'HCwrld · Poster & art direction', image: '/projects/hc-poster-art.jpeg', focus: 'center' },
+  { number: '11', name: 'Tiger Shirt', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-tiger-shirt.jpeg', focus: 'center' },
+  { number: '12', name: 'October Pants', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-pants.jpeg', focus: 'center' },
 ]
 
 const capabilities = [
