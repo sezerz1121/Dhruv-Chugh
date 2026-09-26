@@ -158,6 +158,13 @@ body{background:var(--paper);color:var(--ink)}.grain{opacity:.07;mix-blend-mode:
   footer .wordmark{font-size:15px}
 }
 
+/* Swipeable front and back views for multi-image tee cards. */
+.project-image-scroll{display:flex;width:100%;height:100%;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:var(--butter) #222;}
+.project-image-scroll img{display:block;flex:0 0 100%;width:100%;height:100%;object-fit:contain!important;background:#111;scroll-snap-align:start;}
+.project-image-scroll::-webkit-scrollbar{height:8px}
+.project-image-scroll::-webkit-scrollbar-track{background:#222}
+.project-image-scroll::-webkit-scrollbar-thumb{background:var(--butter)}
+
 /* Compact resume section and education details. */
 .education-block{margin-top:52px;padding-top:28px;border-top:1px solid var(--line)}
 .education-block>.eyebrow{margin-bottom:22px}
