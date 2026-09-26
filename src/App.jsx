@@ -28,7 +28,7 @@ const projects = [
   { number: '21', name: 'Bandage Heart Emblem', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-bandage-emblem.jpeg', focus: 'center' },
   { number: '22', name: 'Protect Peace Tee', type: 'HCwrld · Apparel graphic design', images: ['/projects/peace-tee-front.jpeg', '/projects/peace-tee-back.jpeg'], focus: 'center' },
   { number: '23', name: 'Paisley Flame Tee — Front & Back', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-paisley-front-back.jpeg', focus: 'center' },
-  { number: '24', name: 'Monster Doodle Tee', type: 'HCwrld · Apparel graphic design', images: ['/projects/monster-doodle-tee-front.jpeg', '/projects/monster-doodle-tee-back.jpeg'], document: '/projects/monster-doodle-project.pdf', focus: 'center' },
+  { number: '17', name: 'Monster Doodle Tee', type: 'HCwrld · Apparel graphic design', images: ['/projects/monster-doodle-tee-front.jpeg', '/projects/monster-doodle-tee-back.jpeg'], document: '/projects/monster-doodle-project.pdf', focus: 'center' },
   { number: '25', name: 'Dragon Globe Tee', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-dragon-globe-tee.jpeg', focus: 'center' },
 ]
 
