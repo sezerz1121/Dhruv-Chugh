@@ -7,10 +7,13 @@ gsap.registerPlugin(ScrollTrigger)
 const Arrow = () => <span className="arrow" aria-hidden="true">↗</span>
 
 const projects = [
+  { name: 'HCwrld — Motion Campaign', type: 'HCwrld · Streetwear campaign film', video: '/projects/hcwrld-motion-campaign.mp4', focus: 'center' },
+  { name: 'Joker', type: 'Behance · Digital artwork', image: '/projects/behance-joker.png', link: 'https://www.behance.net/gallery/136552461/Joker', focus: 'center' },
+  { name: 'Skull', type: 'Behance · Digital artwork', image: '/projects/behance-skull.png', link: 'https://www.behance.net/gallery/135069709/skull', focus: 'center' },
   { number: '01', name: 'HCwrld', type: 'Founder & Creative Director · Streetwear', className: 'cv-hc', line: <>Made for the<br/><i>world in motion.</i></> },
   { number: '02', name: 'Punora', type: 'D2C electronics · Marketplace creative', className: 'cv-punora', line: <>Everyday tech,<br/><i>made clear.</i></> },
   { number: '03', name: 'Friends Clearing Agency', type: 'Agency · Identity, social & print', className: 'cv-fca', line: <>Ideas made<br/><i>real.</i></> },
-  { number: '04', name: 'Juice Wrld — Album Art', type: 'Music cover · Digital artwork', image: '/projects/jw-project.jpeg', focus: 'center' },
+  { number: '04', name: 'Juice Wrld — Album Art', type: 'Music cover · Digital artwork', image: '/projects/jw-project.jpeg', link: 'https://www.behance.net/gallery/139462279/JUICE-WRLD-', focus: 'center' },
   { number: '05', name: 'Space Airways — Travel Website', type: 'Travel booking · Website UI/UX', image: '/projects/space-airways.jpeg', focus: 'top' },
   { number: '06', name: 'Jante Mereko Ko', type: 'Bhukkad Editor · Album cover artwork', image: '/projects/bhukkad-editor.jpeg', focus: 'center' },
   { number: '07', name: 'Dexter — Shopping App', type: 'E-commerce · Mobile app UI', image: '/projects/dexter-app.jpeg', focus: 'center' },
@@ -19,15 +22,26 @@ const projects = [
   { number: '10', name: 'We Are Back', type: 'HCwrld · Poster & art direction', image: '/projects/hc-poster-art.jpeg', focus: 'center' },
   { number: '11', name: 'Tiger Shirt', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-tiger-shirt.jpeg', focus: 'center' },
   { number: '12', name: 'October Pants', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-pants.jpeg', focus: 'center' },
+  { name: 'Rugged Graphic Tee', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-rugged-blue-tee.jpeg', focus: 'center' },
+  { name: 'Cartoon Graphic Tee', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-cartoon-tee.jpeg', focus: 'center' },
+  { name: 'Forest Campaign', type: 'HCwrld · Streetwear campaign photography', image: '/projects/hc-forest-campaign.jpeg', focus: 'center' },
+  { name: 'Broken Heart Tee — Graphic Study', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-broken-heart-front-back.jpeg', focus: 'center' },
+  { name: 'Broken Heart Tee — Alternate Print', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-broken-heart-front-back-alt.jpeg', focus: 'center' },
+  { name: 'Bandage Heart Emblem', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-bandage-emblem.jpeg', focus: 'center' },
+  { name: 'Protect Peace — Lookbook', type: 'HCwrld · Apparel & campaign direction', image: '/projects/hc-protect-peace-lookbook.jpeg', focus: 'center' },
+  { name: 'Paisley Flame Tee — Front & Back', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-paisley-front-back.jpeg', focus: 'center' },
+  { name: 'Monster Doodle Tee', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-monster-doodle-tee.jpeg', focus: 'center' },
+  { name: 'Dragon Globe Tee', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-dragon-globe-tee.jpeg', focus: 'center' },
+  { name: 'Character Graphic Tee', type: 'HCwrld · Apparel graphic design', image: '/projects/hc-character-tee.jpeg', focus: 'center' },
 ]
 
 const capabilities = [
-  ['✦', 'Illustration', 'Hand-drawn artwork with an energetic, ownable point of view.'],
+  ['âœ¦', 'Illustration', 'Hand-drawn artwork with an energetic, ownable point of view.'],
   ['Aa', 'Brand identity', 'Visual systems, logos, colour and type that feel unmistakably yours.'],
-  ['◌', 'Social creative', 'Scroll-stopping posts, stories, covers and campaign worlds.'],
-  ['▣', 'Campaign & ads', 'Concept-led creative built for launches, audiences and attention.'],
-  ['⌁', 'E-commerce design', 'Product listings, hero banners and visual merchandising that sells.'],
-  ['▤', 'Print & packaging', 'Tactile, considered assets made to stand out off-screen.'],
+  ['â—Œ', 'Social creative', 'Scroll-stopping posts, stories, covers and campaign worlds.'],
+  ['â–£', 'Campaign & ads', 'Concept-led creative built for launches, audiences and attention.'],
+  ['âŒ', 'E-commerce design', 'Product listings, hero banners and visual merchandising that sells.'],
+  ['â–¤', 'Print & packaging', 'Tactile, considered assets made to stand out off-screen.'],
 ]
 
 function App() {
@@ -52,12 +66,14 @@ function App() {
         gsap.set(path, { strokeDasharray: length, strokeDashoffset: length })
         gsap.to(path, { strokeDashoffset: 0, ease: 'none', scrollTrigger: { trigger: root.current, start: 'top top', end: 'bottom bottom', scrub: 1 } })
       })
-      gsap.to('.sun', { rotate: 360, duration: 18, repeat: -1, ease: 'none' })
-      gsap.to('.paper-card', { y: -14, rotate: 9, duration: 3.2, repeat: -1, yoyo: true, ease: 'sine.inOut' })
-      gsap.to('.scribble', { y: -18, x: 8, duration: 2.7, repeat: -1, yoyo: true, ease: 'sine.inOut' })
-      gsap.to('.sticker', { rotate: -4, duration: 2.4, repeat: -1, yoyo: true, ease: 'sine.inOut' })
-      gsap.to('.contact-orb', { x: 48, y: 28, scale: 1.08, duration: 5, repeat: -1, yoyo: true, ease: 'sine.inOut' })
-      gsap.to('.contact .button', { y: -5, duration: 1.5, repeat: -1, yoyo: true, ease: 'sine.inOut' })
+      if (window.matchMedia('(min-width: 761px) and (prefers-reduced-motion: no-preference)').matches) {
+        gsap.to('.sun', { rotate: 360, duration: 18, repeat: -1, ease: 'none' })
+        gsap.to('.paper-card', { y: -14, rotate: 9, duration: 3.2, repeat: -1, yoyo: true, ease: 'sine.inOut' })
+        gsap.to('.scribble', { y: -18, x: 8, duration: 2.7, repeat: -1, yoyo: true, ease: 'sine.inOut' })
+        gsap.to('.sticker', { rotate: -4, duration: 2.4, repeat: -1, yoyo: true, ease: 'sine.inOut' })
+        gsap.to('.contact-orb', { x: 48, y: 28, scale: 1.08, duration: 5, repeat: -1, yoyo: true, ease: 'sine.inOut' })
+        gsap.to('.contact .button', { y: -5, duration: 1.5, repeat: -1, yoyo: true, ease: 'sine.inOut' })
+      }
       if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
         gsap.utils.toArray('.project, .cap, .paper-card').forEach((card) => {
           const move = (event) => {
@@ -92,7 +108,7 @@ function App() {
     <header className="wrap hero" id="top">
       <nav className="nav">
         <a className="wordmark" href="#top" onClick={closeMenu}>Dhruv<span> Chugh</span></a>
-        <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen}>Menu <b>{menuOpen ? '×' : '+'}</b></button>
+        <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen}>Menu <b>{menuOpen ? 'Ã—' : '+'}</b></button>
         <div className={'navlinks ' + (menuOpen ? 'open' : '')}>
           <a href="#work" onClick={closeMenu}>Work</a><a href="#about" onClick={closeMenu}>About</a>
         </div>
@@ -103,10 +119,10 @@ function App() {
           <p className="eyebrow"><span /> Graphic designer · Delhi, India</p>
           <h1>Art that gives<br/>brands a <em>pulse.</em></h1>
           <p className="intro-copy">I’m Dhruv — a graphic designer and illustrator creating expressive identities, hand-drawn worlds, and social-first work that gets people looking twice.</p>
-          <div className="hero-actions"><a className="button" href="#work">See selected work <Arrow /></a><a className="underlink" href="#about">A little about me ↓</a></div>
+          <div className="hero-actions"><a className="button" href="#work">See selected work <Arrow /></a><a className="underlink" href="#about">A little about me â†“</a></div>
         </section>
         <div className="hero-art" aria-label="Abstract hand-drawn illustration">
-          <div className="sun">✳</div><div className="scribble">★</div><div className="paper-card"><small>DESIGNED<br/>BY DHRUV</small><b>MAKE<br/><i>NOISE.</i></b><span>✦</span></div><div className="sticker">ALL<br/>HEART</div><svg viewBox="0 0 500 450" className="doodle" aria-hidden="true"><path d="M47 338C101 190 162 406 244 274c77-124 119 47 217-178"/><path d="M73 106c54-68 89 27 134-22 47-51 77 24 128-44"/><circle cx="90" cy="345" r="24"/></svg>
+          <div className="sun">âœ³</div><div className="scribble">â˜…</div><div className="paper-card"><small>DESIGNED<br/>BY DHRUV</small><b>MAKE<br/><i>NOISE.</i></b><span>âœ¦</span></div><div className="sticker">ALL<br/>HEART</div><svg viewBox="0 0 500 450" className="doodle" aria-hidden="true"><path d="M47 338C101 190 162 406 244 274c77-124 119 47 217-178"/><path d="M73 106c54-68 89 27 134-22 47-51 77 24 128-44"/><circle cx="90" cy="345" r="24"/></svg>
         </div>
       </div>
       <div className="hero-footer"><span>Hand-drawn visual design & creative direction</span><div><b>ILLUSTRATION</b><b>IDENTITY</b><b>CAMPAIGNS</b></div></div>
@@ -116,7 +132,7 @@ function App() {
 
     <section className="capabilities wrap" id="capabilities"><div className="section-title reveal"><div><p className="eyebrow"><span /> What I do</p><h2>Ideas, <em>drawn out.</em></h2></div><p>I build visual languages that can live everywhere — from the first rough sketch to the last post in a campaign.</p></div><div className="cap-grid">{capabilities.map(([icon,title,text], i) => <article className="cap reveal" key={title}><div className="cap-top"><strong>{icon}</strong><span>0{i+1}</span></div><h3>{title}</h3><p>{text}</p></article>)}</div></section>
 
-    <section className="work wrap" id="work"><div className="section-title reveal"><div><p className="eyebrow"><span /> Selected work</p><h2>Made to be <em>seen.</em></h2></div><p>Brand worlds from my CV, alongside album artwork, website and mobile experiences.</p></div><div className="project-grid">{projects.map((project, index) => <article className={'project reveal ' + (project.image ? 'photo-project' : 'cv-project ' + project.className)} key={project.name}><div className="project-art"><span className="project-number">{project.number}</span>{project.image ? <img src={project.image} alt={project.name + ' project preview'} loading={index === 0 ? 'eager' : 'lazy'} style={{ objectPosition: project.focus }} /> : <div className="cv-brand"><b>{project.name}</b><p>{project.line}</p><small>FROM THE CV · EXPLORE</small><i className="cv-shape" /></div>}</div><div className="project-meta"><div><span>{project.type}</span><h3>{project.name}</h3></div></div></article>)}</div></section>
+    <section className="work wrap" id="work"><div className="section-title reveal"><div><p className="eyebrow"><span /> Selected work</p><h2>Made to be <em>seen.</em></h2></div><p>Brand worlds from my CV, alongside album artwork, website and mobile experiences.</p></div><div className="project-grid">{projects.map((project, index) => { const media = project.image || project.video; return <article className={'project reveal ' + (media ? `photo-project ${project.video ? 'video-project' : ''}` : 'cv-project ' + project.className)} key={project.name}><div className="project-art"><span className="project-number">{String(index + 1).padStart(2, '0')}</span>{project.video ? <><video src={project.video} aria-label={project.name} autoPlay muted loop playsInline controls preload="metadata" style={{ objectPosition: project.focus }} /><a className="image-view" href={project.link || project.video} target="_blank" rel="noreferrer" aria-label={'View video: ' + project.name}>View ↗</a></> : project.image ? <><img src={project.image} alt={project.name + ' project preview'} loading={index === 4 ? 'eager' : 'lazy'} decoding="async" style={{ objectPosition: project.focus }} /><a className="image-view" href={project.link || project.image} target="_blank" rel="noreferrer" aria-label={'View full image: ' + project.name}>View ↗</a></> : <div className="cv-brand"><b>{project.name}</b><p>{project.line}</p><small>FROM THE CV · EXPLORE</small><i className="cv-shape" /></div>}</div><div className="project-meta"><div><span>{project.type}</span><h3>{project.name}</h3></div></div></article>})}</div></section>
 
     <section className="impact"><div className="wrap metrics reveal"><div><strong>299K</strong><span>Accounts reached</span></div><div><strong>91K</strong><span>Views in one month</span></div><div><strong>10K+</strong><span>Units sold</span></div><div><strong>3</strong><span>Creative teams</span></div></div></section>
 
